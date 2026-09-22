@@ -199,15 +199,7 @@
         <h3 class="subsection-title">사례 연구</h3>
 
         <!-- Featured case -->
-        <article class="featured-case">
-          <div class="featured-visual" aria-hidden="true">
-            <div class="featured-visual-inner">
-              <span class="featured-mark">AX</span>
-              <div class="featured-bars">
-                <span></span><span></span>
-              </div>
-            </div>
-          </div>
+        <article class="featured-case featured-case-text">
           <div class="featured-body">
             <div class="case-header">
               <span class="card-badge">현재 핵심</span>
@@ -215,18 +207,34 @@
             </div>
             <h3>통합의료정보시스템<br class="br-md" /> 에이전트 플랫폼</h3>
             <p>
-              폐쇄망 병원 환경에서 HIS(i-SIS)와 연동되는 에이전트 생태계를 구축합니다.
-              <strong>통합의료정보시스템 에이전트</strong><span class="repo-mono">AgentBuilder</span>로
-              워크플로우를 저작·실행하고,
-              <strong>일산병원 데이터허브</strong><span class="repo-mono">isis-directory</span> MCP 서버로
-              의료기록·부서·검사 등 도구를 에이전트에 안전하게 노출합니다.
-              사번 인증, 온프레미스 LLM·Hermes, API 키 스코프, 노코드 도구 레지스트리가 한 축으로 동작합니다.
+              폐쇄망 병원 환경에서 통합의료정보시스템과 연동되는 에이전트 생태계를 구축합니다.
+              <strong>통합의료정보시스템 에이전트</strong>로 업무 워크플로우를 시각적으로 저작·실행하고,
+              <strong>일산병원 데이터허브</strong> MCP 서버로 의료기록·부서·검사 등 도구를 에이전트에 안전하게 노출합니다.
             </p>
-            <ul class="case-features">
-              <li>캔버스 빌더 · GraphSpec Export · hermes-chat 멀티에이전트</li>
-              <li>Streamable HTTP MCP · Oracle i-SIS · Tableau DW 연동</li>
-              <li>사번 로그인 · Redis 세션 · PHI 보존기간 파기 정책</li>
-            </ul>
+            <div class="featured-func">
+              <h4 class="featured-func-title">주요 기능</h4>
+              <ul class="case-features case-features-rich">
+                <li>
+                  <strong>에이전트 저작·실행</strong> —
+                  캔버스 기반 빌더로 GraphSpec을 내보내고, hermes-chat 멀티에이전트로 병원 업무 흐름을 실행합니다.
+                </li>
+                <li>
+                  <strong>도구·데이터 연동</strong> —
+                  Streamable HTTP MCP · Oracle(통합의료정보시스템) · Tableau(DW) 연동으로
+                  조회·분석 도구를 에이전트에 연결합니다.
+                </li>
+                <li>
+                  <strong>인증·거버넌스</strong> —
+                  사번 로그인, API 키 스코프, Redis 세션, PHI 보존기간 파기 정책으로
+                  폐쇄망에서의 접근 통제와 감사 가능성을 맞춥니다.
+                </li>
+                <li>
+                  <strong>노코드 도구 레지스트리</strong> —
+                  데이터허브에서 도구를 등록·관리하고, 온프레미스 LLM·Hermes와 함께
+                  워크플로우에 노출합니다.
+                </li>
+              </ul>
+            </div>
             <div class="tags">
               <span class="tag">통합의료정보시스템 에이전트</span>
               <span class="tag">일산병원 데이터허브</span>

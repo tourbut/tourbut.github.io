@@ -612,6 +612,30 @@ button:focus-visible {
   align-items: center;
   margin-bottom: 5rem;
 }
+
+.featured-case-text {
+  grid-template-columns: 1fr;
+  max-width: 52rem;
+}
+.featured-func {
+  margin: 1.75rem 0 1.5rem;
+}
+.featured-func-title {
+  margin: 0 0 0.85rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+}
+.case-features-rich li {
+  margin-bottom: 0.85rem;
+  line-height: 1.55;
+}
+.case-features-rich li:last-child {
+  margin-bottom: 0;
+}
+
 .featured-visual {
   aspect-ratio: 4 / 3;
   border-radius: 24px;
