@@ -201,15 +201,26 @@
             </div>
             <h3>통합의료정보시스템 에이전트 플랫폼</h3>
             <p>
-              일산병원 AX추진부에서 HIS와 연동되는 에이전트 플랫폼을 구축합니다.
-              에이전트 빌더와 통합의료정보시스템 MCP 서버를 중심으로 확장 가능한
-              에이전트 생태계를 설계·구현하고 있습니다.
+              폐쇄망 병원 환경에서 HIS(i-SIS)와 연동되는 에이전트 생태계를 구축합니다.
+              <strong>AgentBuilder</strong>로 워크플로우를 저작·실행하고,
+              <strong>isis-directory</strong> MCP 서버로 의료기록·부서·검사 등 도구를
+              에이전트에 안전하게 노출합니다. 사번 인증, 온프레미스 LLM·Hermes,
+              API 키 스코프, 노코드 도구 레지스트리가 한 축으로 동작합니다.
             </p>
+            <ul class="case-features">
+              <li>캔버스 빌더 · GraphSpec Export · hermes-chat 멀티에이전트</li>
+              <li>Streamable HTTP MCP · Oracle i-SIS · Tableau DW 연동</li>
+              <li>사번 로그인 · Redis 세션 · PHI 보존기간 파기 정책</li>
+            </ul>
             <div class="tags">
               <span class="tag">AgentBuilder</span>
+              <span class="tag">isis-directory</span>
               <span class="tag">MCP</span>
-              <span class="tag">Python</span>
-              <span class="tag">HIS</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">SvelteKit</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Oracle</span>
             </div>
             <div class="case-links">
               <a href="https://github.com/tourbut/AgentBuilder" target="_blank" rel="noopener noreferrer">AgentBuilder →</a>
@@ -265,7 +276,21 @@
               <h3>AgentBuilder</h3>
               <span class="lang">Python</span>
             </div>
-            <p>일산병원 에이전트 빌더 — 통합의료정보시스템 에이전트 플랫폼의 핵심</p>
+            <p>폐쇄망 병원용 AI 에이전트 저작·실행 플랫폼. i-SIS 사번 인증과 온프레미스 Hermes·사내 LLM으로 워크플로우를 설계하고 실행합니다.</p>
+            <ul class="project-features">
+              <li>캔버스 빌더 · GraphSpec Export · 그래프 인터프리터</li>
+              <li>hermes-chat 멀티에이전트 · HIS 임베딩 진입</li>
+              <li>워크플로우→Hermes 도구 노출 · 거버넌스</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">SvelteKit</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Docker</span>
+              <span class="tag">MCP</span>
+            </div>
             <span class="project-link">github.com/tourbut/AgentBuilder</span>
           </a>
 
@@ -274,7 +299,21 @@
               <h3>isis-directory</h3>
               <span class="lang">Python</span>
             </div>
-            <p>통합의료정보시스템 MCP 서버 — 에이전트 플랫폼의 핵심</p>
+            <p>i-SIS 의료기록 조회 MCP 서버. 에이전트가 API 키로 환자·검사·부서 등 도구를 안전하게 호출할 수 있게 합니다.</p>
+            <ul class="project-features">
+              <li>Streamable HTTP MCP · 노코드 도구 레지스트리</li>
+              <li>사번 로그인 · API 키 발급·스코프 관리</li>
+              <li>Oracle i-SIS · Tableau DW 연동</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">SQLModel</span>
+              <span class="tag">MCP</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Oracle</span>
+              <span class="tag">SvelteKit</span>
+            </div>
             <span class="project-link">github.com/tourbut/isis-directory</span>
           </a>
 
@@ -283,7 +322,19 @@
               <h3>nhimc-models</h3>
               <span class="lang">Python</span>
             </div>
-            <p>일산병원 LLM 모델 레포</p>
+            <p>일산병원 GPU 서버에 LLM을 Docker로 배포·서빙하기 위한 컨테이너 설정과 배포 스크립트 저장소입니다.</p>
+            <ul class="project-features">
+              <li>vLLM 중심 · Ollama 경량 템플릿</li>
+              <li>폐쇄망 오프라인 가중치 마운트</li>
+              <li>서버별 compose · 모델 카탈로그·다운로드</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Docker</span>
+              <span class="tag">vLLM</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">CUDA</span>
+              <span class="tag">Hugging Face</span>
+            </div>
             <span class="project-link">github.com/tourbut/nhimc-models</span>
           </a>
 
@@ -292,7 +343,22 @@
               <h3>NHIMC_CHATBOT</h3>
               <span class="lang">Python</span>
             </div>
-            <p>국민건강보험 일산병원 챗봇 시스템 — FastAPI, SvelteKit, RAG</p>
+            <p>일산병원 AI 챗봇 시스템. RAG 질의응답, 파일 기반 문서 검색, 텍스트마이닝과 관리자·사용량 관리를 제공합니다.</p>
+            <ul class="project-features">
+              <li>RAG 채팅 · 파일 업로드 기반 질의응답</li>
+              <li>스키마 기반 텍스트마이닝 · Celery 비동기</li>
+              <li>사용자/부서 사용량 · 프롬프트·LLM 관리</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">SvelteKit</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Qdrant</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Redis</span>
+              <span class="tag">Celery</span>
+            </div>
             <span class="project-link">github.com/tourbut/NHIMC_CHATBOT</span>
           </a>
 
@@ -301,7 +367,20 @@
               <h3>NHIMC_MCP</h3>
               <span class="lang">Python</span>
             </div>
-            <p>MCP 서버</p>
+            <p>챗봇·에이전트가 Oracle·Sybase 등 레거시 DB에 구조화된 도구로 접근하도록 중계하는 MCP 인터페이스 서버입니다.</p>
+            <ul class="project-features">
+              <li>MCP Tools/Resources로 DB 조회 중계</li>
+              <li>Oracle · Sybase(JDBC) 연동</li>
+              <li>iSIS / CDW / Bef 인터페이스 모듈</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">FastMCP</span>
+              <span class="tag">Oracle</span>
+              <span class="tag">JayDeBeApi</span>
+              <span class="tag">Docker</span>
+              <span class="tag">uv</span>
+            </div>
             <span class="project-link">github.com/tourbut/NHIMC_MCP</span>
           </a>
 
@@ -310,16 +389,44 @@
               <h3>i-Docs</h3>
               <span class="lang">Python</span>
             </div>
-            <p>국민건강보험 일산병원 지능형 문서 통합 관리 시스템</p>
+            <p>병원 문서(HWP·PDF·DOCX 등)를 수집·정규화·자산화하고 MCP로 에이전트에 노출하는 문서 통합 관리 플랫폼입니다. 설계·인프라·인증 기반이 구축되어 있습니다.</p>
+            <ul class="project-features">
+              <li>다포맷 파서 · 파일서버 버전 디렉터리 이력</li>
+              <li>Celery 파이프라인 · SSE 진행률 관제</li>
+              <li>MCP 조항 검색 · 개정 이력 추적(설계)</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">FastAPI</span>
+              <span class="tag">Celery</span>
+              <span class="tag">SvelteKit</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">Redis</span>
+              <span class="tag">MCP</span>
+              <span class="tag">Docker</span>
+            </div>
             <span class="project-link">github.com/tourbut/i-Docs</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/MyKnows" target="_blank" rel="noopener noreferrer">
             <div class="project-top">
               <h3>MyKnows</h3>
-              <span class="lang">HTML</span>
+              <span class="lang">Python</span>
             </div>
-            <p>나의 지식저장소</p>
+            <p>LLM-Wiki 패턴 기반 개인 지식저장소. 스크랩·세미나·문서 등 원천을 점진적으로 요약·연결해 그래프 인덱스로 질의합니다.</p>
+            <ul class="project-features">
+              <li>raw → WIKI → graphify Ingest/Query/Lint</li>
+              <li>웹·유튜브·문서·GitHub 레포 편입 워크플로</li>
+              <li>그래프 대시보드 · MCP wiki 서버</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Markdown</span>
+              <span class="tag">graphify</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Vite</span>
+              <span class="tag">MCP</span>
+              <span class="tag">uv</span>
+            </div>
             <span class="project-link">github.com/tourbut/MyKnows</span>
           </a>
 
@@ -328,16 +435,41 @@
               <h3>Fullops-Squad-plugin</h3>
               <span class="lang">Python</span>
             </div>
-            <p>Fullops-Squad-plugin</p>
+            <p>Orca에서 Codex·Claude Code·grok·agy worker에 작업을 전달하고, 개발 산출물과 작업 기록을 레포에 남기는 하네스 플러그인입니다.</p>
+            <ul class="project-features">
+              <li>역할별 handover · review · deliverables 워크플로</li>
+              <li>멀티 CLI 플러그인 설치·레포 setup 분리</li>
+              <li>공통 코딩·테스트·보안 규칙 배포</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">Python</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">Agent Plugins</span>
+              <span class="tag">MCP</span>
+              <span class="tag">Orca</span>
+            </div>
             <span class="project-link">github.com/tourbut/Fullops-Squad-plugin</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/BrainMR_MCI" target="_blank" rel="noopener noreferrer">
             <div class="project-top">
               <h3>BrainMR_MCI</h3>
-              <span class="lang">Jupyter</span>
+              <span class="lang">Python</span>
             </div>
-            <p>Brain MRI · MCI 관련 분석 노트북</p>
+            <p>뇌 MRI 영상으로 경도인지장애(MCI)를 분류하는 PyTorch 학습·실험 프로젝트입니다. (README 없음 — 코드·config 기준)</p>
+            <ul class="project-features">
+              <li>3D ResNet 기반 다중 클래스 분류 학습</li>
+              <li>의료영상 전처리(crop·정규화 · pydicom/SimpleITK)</li>
+              <li>Jupyter 실험·결과 뷰어 노트북</li>
+            </ul>
+            <div class="tags">
+              <span class="tag">PyTorch</span>
+              <span class="tag">ResNet</span>
+              <span class="tag">SimpleITK</span>
+              <span class="tag">pydicom</span>
+              <span class="tag">scikit-learn</span>
+              <span class="tag">Jupyter</span>
+            </div>
             <span class="project-link">github.com/tourbut/BrainMR_MCI</span>
           </a>
         </div>

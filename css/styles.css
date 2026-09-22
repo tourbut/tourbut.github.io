@@ -425,7 +425,7 @@ button:focus-visible {
 
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1rem;
 }
 .project-card {
@@ -462,15 +462,34 @@ button:focus-visible {
   white-space: nowrap;
 }
 .project-card p {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.65rem;
   color: var(--text-muted);
-  font-size: 0.92rem;
-  flex: 1;
+  font-size: 0.9rem;
+}
+.project-features,
+.case-features {
+  margin: 0 0 0.85rem;
+  padding-left: 1.1rem;
+  color: var(--text-muted);
+  font-size: 0.84rem;
+  line-height: 1.55;
+}
+.project-features li,
+.case-features li {
+  margin-bottom: 0.25rem;
+}
+.project-card .tags {
+  margin: 0 0 0.85rem;
+}
+.project-card .tag {
+  font-size: 0.68rem;
+  padding: 0.15rem 0.45rem;
 }
 .project-link {
   font-family: var(--mono);
   font-size: 0.75rem;
   color: var(--accent-strong);
+  margin-top: auto;
 }
 
 /* Skills */
