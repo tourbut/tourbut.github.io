@@ -12,7 +12,7 @@
   <title>신성철 | 개발자 포트폴리오</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
@@ -22,7 +22,7 @@
     <div class="container header-inner">
       <a class="logo" href="#top" aria-label="홈">신성철<span class="logo-dot">.</span></a>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="메뉴 열기">
-        <span></span><span></span><span></span>
+        <span></span><span></span>
       </button>
       <nav class="site-nav" id="site-nav" aria-label="주요 메뉴">
         <ul>
@@ -30,7 +30,7 @@
           <li><a href="#career">경력</a></li>
           <li><a href="#projects">프로젝트</a></li>
           <li><a href="#skills">기술</a></li>
-          <li><a href="#awards">수상·자격</a></li>
+          <li><a href="#awards">수상</a></li>
           <li><a href="#contact">연락</a></li>
         </ul>
       </nav>
@@ -53,19 +53,25 @@
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
           <a class="btn btn-ghost" href="#contact">연락하기</a>
-          <a class="btn btn-ghost" href="https://github.com/tourbut/" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a class="btn btn-text" href="https://github.com/tourbut/" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
 
-    <!-- About / Highlights -->
-    <section class="section" id="about" aria-labelledby="about-title">
-      <div class="container">
-        <h2 id="about-title" class="section-title">소개</h2>
-        <p class="section-lead">핵심 역량과 현재 포커스</p>
-        <div class="highlight-grid">
-          <article class="card highlight-card highlight-current">
-            <span class="card-badge">현재</span>
+    <div class="container">
+      <div class="editorial-divider" aria-hidden="true"></div>
+    </div>
+
+    <!-- About -->
+    <section class="section section-about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="about-intro">
+          <h2 id="about-title" class="section-title section-title-left">소개</h2>
+          <p class="section-lead section-lead-left">핵심 역량과 현재 포커스</p>
+        </div>
+        <div class="about-body">
+          <article class="magazine-block magazine-featured">
+            <span class="eyebrow-label">Core Focus</span>
             <h3>통합의료정보시스템 에이전트 플랫폼</h3>
             <p>
               일산병원 AX추진부에서 HIS 연동 에이전트 플랫폼을 구축 중입니다.
@@ -74,21 +80,23 @@
               이 작업의 핵심 저장소입니다.
             </p>
           </article>
-          <article class="card highlight-card">
-            <h3>생성형 AI 활용 서비스</h3>
-            <p>
-              AI Think 동호회 창단(53명), On-Premise RAG, LLM 의무기록 텍스트마이닝 등
-              병원 내 생성형 AI 서비스를 설계·운영했습니다.
-            </p>
-          </article>
-          <article class="card highlight-card">
-            <h3>안정적인 시스템 운영</h3>
-            <p>
-              대용량 데이터 처리와 SQL 튜닝을 바탕으로 DW·DBA·정보보안 시스템을
-              안정적으로 운영해 왔습니다.
-            </p>
-          </article>
-          <article class="card highlight-card">
+          <div class="about-pair">
+            <article class="magazine-block">
+              <h3>생성형 AI 활용 서비스</h3>
+              <p>
+                AI Think 동호회 창단(53명), On-Premise RAG, LLM 의무기록 텍스트마이닝 등
+                병원 내 생성형 AI 서비스를 설계·운영했습니다.
+              </p>
+            </article>
+            <article class="magazine-block">
+              <h3>안정적인 시스템 운영</h3>
+              <p>
+                대용량 데이터 처리와 SQL 튜닝을 바탕으로 DW·DBA·정보보안 시스템을
+                안정적으로 운영해 왔습니다.
+              </p>
+            </article>
+          </div>
+          <article class="magazine-block">
             <h3>병원 DW · DBA</h3>
             <p>
               EDW/CDW/EIS, ETL, Tableau 기반 병원 데이터웨어하우스 운영 및
@@ -180,26 +188,39 @@
         </ol>
 
         <div class="education card">
-          <h3>학력</h3>
-          <p><strong>한성대학교</strong> 정보통신공학과 · 2007.03 – 2013.02</p>
+          <span class="eyebrow-label">Education</span>
+          <div class="education-row">
+            <p><strong>한성대학교</strong> <span class="edu-dept">정보통신공학과</span></p>
+            <span class="edu-period">2007.03 – 2013.02</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Case studies + GitHub projects -->
+    <!-- Projects -->
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="container">
-        <h2 id="projects-title" class="section-title">프로젝트</h2>
-        <p class="section-lead">주요 사례 연구와 GitHub 저장소</p>
+        <h2 id="projects-title" class="section-title section-title-left section-title-xl">프로젝트</h2>
+        <p class="section-lead section-lead-left">주요 사례 연구와 GitHub 저장소</p>
 
         <h3 class="subsection-title">사례 연구</h3>
-        <div class="case-grid">
-          <article class="card case-card featured">
+
+        <!-- Featured case -->
+        <article class="featured-case">
+          <div class="featured-visual" aria-hidden="true">
+            <div class="featured-visual-inner">
+              <span class="featured-mark">AX</span>
+              <div class="featured-bars">
+                <span></span><span></span>
+              </div>
+            </div>
+          </div>
+          <div class="featured-body">
             <div class="case-header">
               <span class="card-badge">현재 핵심</span>
               <span class="case-period">2026.06 –</span>
             </div>
-            <h3>통합의료정보시스템 에이전트 플랫폼</h3>
+            <h3>통합의료정보시스템<br class="br-md" /> 에이전트 플랫폼</h3>
             <p>
               폐쇄망 병원 환경에서 HIS(i-SIS)와 연동되는 에이전트 생태계를 구축합니다.
               <strong>AgentBuilder</strong>로 워크플로우를 저작·실행하고,
@@ -226,9 +247,13 @@
               <a href="https://github.com/tourbut/AgentBuilder" target="_blank" rel="noopener noreferrer">AgentBuilder →</a>
               <a href="https://github.com/tourbut/isis-directory" target="_blank" rel="noopener noreferrer">isis-directory →</a>
             </div>
-          </article>
+          </div>
+        </article>
 
-          <article class="card case-card">
+        <div class="case-grid case-grid-editorial">
+          <article class="magazine-card">
+            <div class="editorial-divider" aria-hidden="true"></div>
+            <span class="eyebrow-label">RAG Solution</span>
             <div class="case-header">
               <span class="case-period">2025.01 – 02</span>
             </div>
@@ -238,18 +263,20 @@
               문서·지식 검색과 대화형 질의응답을 제공합니다.
             </p>
             <div class="tags">
-              <span class="tag">Docker</span>
-              <span class="tag">Ollama</span>
-              <span class="tag">PostgreSQL</span>
-              <span class="tag">pgvector</span>
-              <span class="tag">Redis</span>
-              <span class="tag">FastAPI</span>
-              <span class="tag">Svelte</span>
-              <span class="tag">Langchain</span>
+              <span class="tag tag-outline">Docker</span>
+              <span class="tag tag-outline">Ollama</span>
+              <span class="tag tag-outline">PostgreSQL</span>
+              <span class="tag tag-outline">pgvector</span>
+              <span class="tag tag-outline">Redis</span>
+              <span class="tag tag-outline">FastAPI</span>
+              <span class="tag tag-outline">Svelte</span>
+              <span class="tag tag-outline">Langchain</span>
             </div>
           </article>
 
-          <article class="card case-card">
+          <article class="magazine-card">
+            <div class="editorial-divider" aria-hidden="true"></div>
+            <span class="eyebrow-label">Text Mining</span>
             <div class="case-header">
               <span class="case-period">2023.10 – 2024.02</span>
             </div>
@@ -259,12 +286,12 @@
               텍스트마이닝 파이프라인을 구축했습니다. Sybase IQ CDW와 연동합니다.
             </p>
             <div class="tags">
-              <span class="tag">FastAPI</span>
-              <span class="tag">Svelte</span>
-              <span class="tag">Ollama</span>
-              <span class="tag">Langchain</span>
-              <span class="tag">Sybase IQ</span>
-              <span class="tag">CDW</span>
+              <span class="tag tag-outline">FastAPI</span>
+              <span class="tag tag-outline">Svelte</span>
+              <span class="tag tag-outline">Ollama</span>
+              <span class="tag tag-outline">Langchain</span>
+              <span class="tag tag-outline">Sybase IQ</span>
+              <span class="tag tag-outline">CDW</span>
             </div>
           </article>
         </div>
@@ -479,8 +506,8 @@
     <!-- Skills -->
     <section class="section section-alt" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <h2 id="skills-title" class="section-title">기술</h2>
-        <p class="section-lead">업무에서 활용하는 기술 스택</p>
+        <h2 id="skills-title" class="section-label">Technology Stack</h2>
+        <p class="visually-hidden">업무에서 활용하는 기술 스택</p>
         <ul class="skills-list" aria-label="기술 목록">
           <li>Oracle</li>
           <li>Python</li>
@@ -506,50 +533,47 @@
 
     <!-- Awards -->
     <section class="section" id="awards" aria-labelledby="awards-title">
-      <div class="container">
+      <div class="container awards-wrap">
         <h2 id="awards-title" class="section-title">수상 · 자격</h2>
         <p class="section-lead">주요 표창과 자격·활동</p>
         <ul class="awards-list">
           <li>
             <span class="award-year">2016, 2018</span>
-            <span>보건복지부 장관 표창</span>
+            <span class="award-name">보건복지부 장관 표창</span>
           </li>
           <li>
             <span class="award-year">2021</span>
-            <span>한국사회보장정보원장 표창</span>
+            <span class="award-name">한국사회보장정보원장 표창</span>
           </li>
           <li>
             <span class="award-year">자격</span>
-            <span>빅데이터분석기사 · SQLD · 정보처리기사</span>
+            <span class="award-name">빅데이터분석기사 · SQLD · 정보처리기사</span>
           </li>
           <li>
             <span class="award-year">2023, 2024</span>
-            <span>의료AI 아이디어 경진대회 평가위원</span>
+            <span class="award-name">의료AI 아이디어 경진대회 평가위원</span>
           </li>
           <li>
             <span class="award-year">교육</span>
-            <span>의료영상 AI 전문가 양성과정</span>
+            <span class="award-name">의료영상 AI 전문가 양성과정</span>
           </li>
         </ul>
       </div>
     </section>
 
     <!-- Contact -->
-    <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+    <section class="section section-contact" id="contact" aria-labelledby="contact-title">
       <div class="container contact-inner">
-        <h2 id="contact-title" class="section-title">연락</h2>
-        <p class="section-lead">협업·문의는 아래 채널로 연락해 주세요.</p>
+        <h2 id="contact-title" class="contact-headline">Let's connect.</h2>
+        <p class="contact-lead">협업·문의는 아래 채널로 연락해 주세요.</p>
         <ul class="contact-list">
           <li>
-            <span class="contact-label">Email</span>
             <a href="mailto:scshin88@gmail.com">scshin88@gmail.com</a>
           </li>
           <li>
-            <span class="contact-label">GitHub</span>
-            <a href="https://github.com/tourbut/" target="_blank" rel="noopener noreferrer">github.com/tourbut</a>
+            <a href="https://github.com/tourbut/" target="_blank" rel="noopener noreferrer">GitHub</a>
           </li>
           <li>
-            <span class="contact-label">Blog</span>
             <a href="https://knowslog.com" target="_blank" rel="noopener noreferrer">knowslog.com</a>
           </li>
         </ul>
