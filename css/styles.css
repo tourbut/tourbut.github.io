@@ -615,25 +615,53 @@ button:focus-visible {
 
 .featured-case-text {
   grid-template-columns: 1fr;
-  max-width: 52rem;
+  max-width: none;
+  width: 100%;
+  align-items: stretch;
+  gap: 0;
+}
+.featured-case-text .featured-body {
+  width: 100%;
+}
+.featured-case-text .featured-body > p {
+  max-width: 48rem;
 }
 .featured-func {
-  margin: 1.75rem 0 1.5rem;
+  margin: 2.25rem 0 1.75rem;
 }
 .featured-func-title {
-  margin: 0 0 0.85rem;
+  margin: 0 0 1.15rem;
   font-size: 0.8rem;
   font-weight: 600;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--text-secondary);
 }
-.case-features-rich li {
-  margin-bottom: 0.85rem;
-  line-height: 1.55;
+.case-features-rich {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem 1.75rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.case-features-rich li:last-child {
-  margin-bottom: 0;
+.case-features-rich li {
+  margin: 0;
+  padding: 1.25rem 1.35rem;
+  line-height: 1.55;
+  background: var(--bg-alt);
+  border-radius: 18px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.case-features-rich li strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-size: 0.95rem;
+}
+@media (max-width: 800px) {
+  .case-features-rich {
+    grid-template-columns: 1fr;
+  }
 }
 
 .featured-visual {
