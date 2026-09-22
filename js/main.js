@@ -28,6 +28,13 @@
     });
   }
 
+  var pdfBtn = document.getElementById("pdf-export");
+  if (pdfBtn) {
+    pdfBtn.addEventListener("click", function () {
+      window.print();
+    });
+  }
+
   var sections = document.querySelectorAll("main section[id]");
   var navLinks = document.querySelectorAll('.site-nav a[href^="#"]');
   if (!sections.length || !navLinks.length || !("IntersectionObserver" in window)) return;
