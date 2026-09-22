@@ -487,6 +487,14 @@ button:focus-visible {
 .about-pair h3 {
   font-size: 1.25rem;
 }
+.magazine-period {
+  display: block;
+  margin-bottom: 0.55rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--text-muted);
+}
 
 /* Timeline */
 .timeline {
@@ -892,6 +900,19 @@ button:focus-visible {
 }
 .lang {
   font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.project-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+.project-period {
+  font-size: 0.68rem;
   font-weight: 500;
   color: var(--text-muted);
   white-space: nowrap;
