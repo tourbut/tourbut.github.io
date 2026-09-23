@@ -505,11 +505,10 @@ button:focus-visible {
 }
 .magazine-period {
   display: block;
-  margin-bottom: 0.55rem;
+  margin-bottom: 0.5rem;
+  font-family: var(--mono);
   font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--text-muted);
+  color: var(--text-faint);
 }
 
 /* Timeline */
@@ -802,9 +801,9 @@ button:focus-visible {
   justify-content: flex-end;
 }
 .project-period {
-  font-size: 0.68rem;
-  font-weight: 500;
-  color: var(--text-muted);
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--text-faint);
   white-space: nowrap;
 }
 .project-card p {
