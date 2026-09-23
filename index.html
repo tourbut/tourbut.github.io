@@ -13,7 +13,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 64 64%22%3E%3Crect width=%2264%22 height=%2264%22 rx=%2214%22 fill=%22%231d1d1f%22/%3E%3Ccircle cx=%2246%22 cy=%2246%22 r=%226%22 fill=%22%230071e3%22/%3E%3C/svg%3E" />
+  <link rel="stylesheet" href="css/styles.css?v=20260923" />
 </head>
 <body>
   <a class="skip-link" href="#main">본문으로 건너뛰기</a>
@@ -63,17 +64,14 @@
       </div>
     </section>
 
-    <div class="container">
-      <div class="editorial-divider" aria-hidden="true"></div>
-    </div>
-
     <!-- About -->
     <section class="section section-about" id="about" aria-labelledby="about-title">
       <div class="container about-grid">
-        <div class="about-intro">
-          <h2 id="about-title" class="section-title section-title-left">소개</h2>
-          <p class="section-lead section-lead-left">핵심 역량과 현재 포커스</p>
-        </div>
+        <header class="section-head about-intro">
+          <p class="section-kicker">01 · About</p>
+          <h2 id="about-title" class="section-title">소개</h2>
+          <p class="section-lead">핵심 역량과 현재 포커스</p>
+        </header>
         <div class="about-body">
           <article class="magazine-block magazine-featured">
             <span class="eyebrow-label">Core Focus</span>
@@ -118,8 +116,11 @@
     <!-- Career -->
     <section class="section section-alt" id="career" aria-labelledby="career-title">
       <div class="container">
-        <h2 id="career-title" class="section-title">경력</h2>
-        <p class="section-lead">12년+ 데이터·시스템·AI 경험</p>
+        <header class="section-head">
+          <p class="section-kicker">02 · Career</p>
+          <h2 id="career-title" class="section-title">경력</h2>
+          <p class="section-lead">12년+ 데이터·시스템·AI 경험</p>
+        </header>
 
         <ol class="timeline">
           <li class="timeline-item">
@@ -199,8 +200,11 @@
     <!-- Projects -->
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="container">
-        <h2 id="projects-title" class="section-title section-title-left section-title-xl">프로젝트</h2>
-        <p class="section-lead section-lead-left">주요 사례 연구와 GitHub 저장소</p>
+        <header class="section-head">
+          <p class="section-kicker">03 · Projects</p>
+          <h2 id="projects-title" class="section-title">프로젝트</h2>
+          <p class="section-lead">주요 사례 연구와 GitHub 저장소</p>
+        </header>
 
         <h3 class="subsection-title">사례 연구</h3>
 
@@ -260,7 +264,6 @@
 
         <div class="case-grid case-grid-editorial">
           <article class="magazine-card">
-            <div class="editorial-divider" aria-hidden="true"></div>
             <span class="eyebrow-label">RAG Solution</span>
             <div class="case-header">
               <span class="case-period">2025.01 – 2025.12</span>
@@ -270,19 +273,18 @@
               민감정보 외부 유출 없이 문서·지식 질의. 병원 내부 On-Premise RAG 챗봇 구축·운영.
             </p>
             <div class="tags">
-              <span class="tag tag-outline">Docker</span>
-              <span class="tag tag-outline">Ollama</span>
-              <span class="tag tag-outline">PostgreSQL</span>
-              <span class="tag tag-outline">pgvector</span>
-              <span class="tag tag-outline">Redis</span>
-              <span class="tag tag-outline">FastAPI</span>
-              <span class="tag tag-outline">Svelte</span>
-              <span class="tag tag-outline">Langchain</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">pgvector</span>
+              <span class="tag">Redis</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Svelte</span>
+              <span class="tag">Langchain</span>
             </div>
           </article>
 
           <article class="magazine-card">
-            <div class="editorial-divider" aria-hidden="true"></div>
             <span class="eyebrow-label">Text Mining</span>
             <div class="case-header">
               <span class="case-period">2023.10 – 2024.02</span>
@@ -292,12 +294,12 @@
               자유서술 의무기록의 일관 추출 난제 → 내부 LLM 파이프라인으로 해결, Sybase IQ CDW 연동.
             </p>
             <div class="tags">
-              <span class="tag tag-outline">FastAPI</span>
-              <span class="tag tag-outline">Svelte</span>
-              <span class="tag tag-outline">Ollama</span>
-              <span class="tag tag-outline">Langchain</span>
-              <span class="tag tag-outline">Sybase IQ</span>
-              <span class="tag tag-outline">CDW</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">Svelte</span>
+              <span class="tag">Ollama</span>
+              <span class="tag">Langchain</span>
+              <span class="tag">Sybase IQ</span>
+              <span class="tag">CDW</span>
             </div>
           </article>
         </div>
@@ -310,7 +312,6 @@
               <div class="project-meta">
                 <span class="project-period">2026.06 ~</span>
                 <span class="visibility-badge is-private">Private</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p class="repo-mono repo-mono-block">AgentBuilder</p>
@@ -329,7 +330,7 @@
               <span class="tag">Docker</span>
               <span class="tag">MCP</span>
             </div>
-            <span class="project-link">github.com/tourbut/AgentBuilder · 비공개 저장소</span>
+            <span class="project-link">github.com/tourbut/AgentBuilder →</span>
           </a>
 
           <a class="card project-card project-featured" href="https://github.com/tourbut/isis-directory" target="_blank" rel="noopener noreferrer">
@@ -338,7 +339,6 @@
               <div class="project-meta">
                 <span class="project-period">2026.06 ~</span>
                 <span class="visibility-badge is-private">Private</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p class="repo-mono repo-mono-block">isis-directory</p>
@@ -357,7 +357,7 @@
               <span class="tag">Oracle</span>
               <span class="tag">SvelteKit</span>
             </div>
-            <span class="project-link">github.com/tourbut/isis-directory · 비공개 저장소</span>
+            <span class="project-link">github.com/tourbut/isis-directory →</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/nhimc-models" target="_blank" rel="noopener noreferrer">
@@ -365,7 +365,6 @@
               <h3>nhimc-models</h3>
               <div class="project-meta">
                 <span class="visibility-badge is-private">Private</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p>일산병원 GPU 서버에 LLM을 Docker로 배포·서빙하기 위한 컨테이너 설정과 배포 스크립트 저장소.</p>
@@ -381,7 +380,7 @@
               <span class="tag">CUDA</span>
               <span class="tag">Hugging Face</span>
             </div>
-            <span class="project-link">github.com/tourbut/nhimc-models · 비공개 저장소</span>
+            <span class="project-link">github.com/tourbut/nhimc-models →</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/NHIMC_CHATBOT" target="_blank" rel="noopener noreferrer">
@@ -389,7 +388,6 @@
               <h3>NHIMC_CHATBOT</h3>
               <div class="project-meta">
                 <span class="visibility-badge is-private">Private</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p>일산병원 AI 챗봇 시스템. RAG 질의응답, 파일 기반 문서 검색, 텍스트마이닝과 관리자·사용량 관리.</p>
@@ -408,7 +406,7 @@
               <span class="tag">Redis</span>
               <span class="tag">Celery</span>
             </div>
-            <span class="project-link">github.com/tourbut/NHIMC_CHATBOT · 비공개 저장소</span>
+            <span class="project-link">github.com/tourbut/NHIMC_CHATBOT →</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/NHIMC_MCP" target="_blank" rel="noopener noreferrer">
@@ -416,7 +414,6 @@
               <h3>NHIMC_MCP</h3>
               <div class="project-meta">
                 <span class="visibility-badge is-private">Private</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p>챗봇·에이전트가 Oracle·Sybase 등 레거시 DB에 구조화된 도구로 접근하도록 중계하는 MCP 인터페이스 서버.</p>
@@ -433,7 +430,7 @@
               <span class="tag">Docker</span>
               <span class="tag">uv</span>
             </div>
-            <span class="project-link">github.com/tourbut/NHIMC_MCP · 비공개 저장소</span>
+            <span class="project-link">github.com/tourbut/NHIMC_MCP →</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/i-Docs" target="_blank" rel="noopener noreferrer">
@@ -441,7 +438,6 @@
               <h3>i-Docs</h3>
               <div class="project-meta">
                 <span class="visibility-badge is-private">Private</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p>병원 문서(HWP·PDF·DOCX 등)를 수집·정규화·자산화하고 MCP로 에이전트에 노출하는 문서 통합 관리 플랫폼. 설계·인프라·인증 기반 구축.</p>
@@ -459,7 +455,7 @@
               <span class="tag">MCP</span>
               <span class="tag">Docker</span>
             </div>
-            <span class="project-link">github.com/tourbut/i-Docs · 비공개 저장소</span>
+            <span class="project-link">github.com/tourbut/i-Docs →</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/MyKnows" target="_blank" rel="noopener noreferrer">
@@ -468,7 +464,6 @@
               <div class="project-meta">
                 <span class="project-period">2026.02 ~ 현재</span>
                 <span class="visibility-badge is-private">Private</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p>에이전트가 못 쓰던 원천 지식 → Ingest·Query·Lint·MCP wiki로 운영형 LLM Wiki.</p>
@@ -486,7 +481,7 @@
               <span class="tag">MCP</span>
               <span class="tag">uv</span>
             </div>
-            <span class="project-link">github.com/tourbut/MyKnows · 비공개 저장소</span>
+            <span class="project-link">github.com/tourbut/MyKnows →</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/Fullops-Squad-plugin" target="_blank" rel="noopener noreferrer">
@@ -495,7 +490,6 @@
               <div class="project-meta">
                 <span class="project-period">2026.09 ~ 현재</span>
                 <span class="visibility-badge is-public">Public</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p>모델별 파편 바이브코딩 → Fullops 하네스로 handover·review·deliverables까지 통합.</p>
@@ -511,7 +505,7 @@
               <span class="tag">MCP</span>
               <span class="tag">Orca</span>
             </div>
-            <span class="project-link">github.com/tourbut/Fullops-Squad-plugin</span>
+            <span class="project-link">github.com/tourbut/Fullops-Squad-plugin →</span>
           </a>
 
           <a class="card project-card" href="https://github.com/tourbut/BrainMR_MCI" target="_blank" rel="noopener noreferrer">
@@ -519,7 +513,6 @@
               <h3>BrainMR_MCI</h3>
               <div class="project-meta">
                 <span class="visibility-badge is-public">Public</span>
-                <span class="lang">Python</span>
               </div>
             </div>
             <p>뇌 MRI 영상으로 경도인지장애(MCI)를 분류하는 PyTorch 학습·실험 프로젝트. (README 없음 — 코드·config 기준)</p>
@@ -536,7 +529,7 @@
               <span class="tag">scikit-learn</span>
               <span class="tag">Jupyter</span>
             </div>
-            <span class="project-link">github.com/tourbut/BrainMR_MCI</span>
+            <span class="project-link">github.com/tourbut/BrainMR_MCI →</span>
           </a>
         </div>
       </div>
@@ -545,8 +538,11 @@
     <!-- Skills -->
     <section class="section section-alt" id="skills" aria-labelledby="skills-title">
       <div class="container">
-        <h2 id="skills-title" class="section-label">Technology Stack</h2>
-        <p class="visually-hidden">업무에서 활용하는 기술 스택</p>
+        <header class="section-head">
+          <p class="section-kicker">04 · Stack</p>
+          <h2 id="skills-title" class="section-title">기술</h2>
+          <p class="section-lead">업무에서 활용하는 기술 스택</p>
+        </header>
         <ul class="skills-list" aria-label="기술 목록">
           <li>Oracle</li>
           <li>Python</li>
@@ -573,9 +569,12 @@
 
     <!-- Awards -->
     <section class="section" id="awards" aria-labelledby="awards-title">
-      <div class="container awards-wrap">
-        <h2 id="awards-title" class="section-title">수상 · 자격</h2>
-        <p class="section-lead">주요 표창과 자격·활동</p>
+      <div class="container">
+        <header class="section-head">
+          <p class="section-kicker">05 · Recognition</p>
+          <h2 id="awards-title" class="section-title">수상 · 자격</h2>
+          <p class="section-lead">주요 표창과 자격·활동</p>
+        </header>
         <ul class="awards-list">
           <li>
             <span class="award-year">2016</span>
@@ -982,6 +981,6 @@
     </section>
   </div>
 
-  <script src="js/main.js"></script>
+  <script src="js/main.js?v=20260923"></script>
 </body>
 </html>
