@@ -367,18 +367,17 @@
                 <span class="visibility-badge is-private">Private</span>
               </div>
             </div>
-            <p>일산병원 GPU 서버에 LLM을 Docker로 배포·서빙하기 위한 컨테이너 설정과 배포 스크립트 저장소.</p>
+            <p>폐쇄망 GPU에서 LLM·멀티모달을 나눠 서빙. 같은 카탈로그를 장비·엔진에 맞춰 최적화.</p>
             <ul class="project-features">
-              <li>vLLM 중심 · Ollama 경량 템플릿</li>
-              <li>폐쇄망 오프라인 가중치 마운트</li>
-              <li>서버별 compose · 모델 카탈로그·다운로드</li>
+              <li>DGX Spark, H200, RTX A4000 — 엔진은 SGLang, vLLM, NIM 중에서 고름</li>
+              <li>병렬은 TP·EP, 용량은 FP8·NVFP4·QAT, 속도는 드래프트 모델(투기적 디코딩)</li>
+              <li>VRAM 예산, 컨텍스트 상한, 오프라인 가중치 마운트</li>
             </ul>
             <div class="tags">
               <span class="tag">Docker</span>
+              <span class="tag">SGLang</span>
               <span class="tag">vLLM</span>
-              <span class="tag">Ollama</span>
               <span class="tag">CUDA</span>
-              <span class="tag">Hugging Face</span>
             </div>
             <span class="project-link">github.com/tourbut/nhimc-models →</span>
           </a>
@@ -832,13 +831,13 @@
           </article>
           <article class="deck-card">
             <div class="deck-card-top"><h3>nhimc-models</h3><span>비공개 · Python</span></div>
-            <p>일산병원 GPU 서버에 LLM을 Docker로 배포·서빙하기 위한 컨테이너 설정과 배포 스크립트 저장소.</p>
+            <p>폐쇄망 GPU에서 LLM·멀티모달을 나눠 서빙. 같은 카탈로그를 장비·엔진에 맞춰 최적화.</p>
             <ul>
-              <li>vLLM 중심 · Ollama 경량 템플릿</li>
-              <li>폐쇄망 오프라인 가중치 마운트</li>
-              <li>서버별 compose · 모델 카탈로그·다운로드</li>
+              <li>DGX Spark, H200, RTX A4000 — 엔진은 SGLang, vLLM, NIM 중에서 고름</li>
+              <li>병렬은 TP·EP, 용량은 FP8·NVFP4·QAT, 속도는 드래프트 모델(투기적 디코딩)</li>
+              <li>VRAM 예산, 컨텍스트 상한, 오프라인 가중치 마운트</li>
             </ul>
-            <p class="deck-tags">Docker · vLLM · Ollama · CUDA · Hugging Face</p>
+            <p class="deck-tags">Docker · SGLang · vLLM · CUDA</p>
             <a class="deck-repo" href="https://github.com/tourbut/nhimc-models">github.com/tourbut/nhimc-models</a>
           </article>
         </div>
