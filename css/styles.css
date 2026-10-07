@@ -853,6 +853,40 @@ button:focus-visible {
   color: var(--accent);
 }
 
+/* KnowsLink card: media + article (video cannot nest in <a>) */
+.project-card-media {
+  cursor: default;
+}
+.project-card-media .project-link {
+  text-decoration: none;
+  color: var(--text-faint);
+  display: inline-block;
+}
+.project-card-media .project-link:hover {
+  color: var(--accent);
+}
+.case-video {
+  margin: 0 0 1rem;
+  width: 100%;
+}
+.case-video video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border-radius: 0.65rem;
+  background: #070b14;
+  border: 1px solid var(--line-soft);
+}
+.case-video figcaption {
+  margin-top: 0.45rem;
+  font-family: var(--mono);
+  font-size: 0.6875rem;
+  color: var(--text-faint);
+  line-height: 1.4;
+}
+
+
 .project-meta {
   display: flex;
   align-items: center;
